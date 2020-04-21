@@ -231,17 +231,26 @@
     </section>
 
     <section>
+        <h2>Challenges</h2>
+        <p class="fragment">Technical: managing and analyzing large, heterogenous noisy data</p>
+        <p class="fragment">Conceptual: interpreting results from data-driven methods</p>
+        <p class="fragment">Reproducibility: tools and incentives</p>
+        <p class="fragment">Socio-technical: collaboration, education</p>
+    </section>
+
+
+    <section>
             <img src="img/eScience-infographic.png" height=400>
             <!-- <p class="fragment"><img src="img/msdse-sponsors.png" height=100></p> -->
 
             <p class="fragment">
-                Data science education
+                Building a data science community: open, rigorous and ethical
             </p>
             <p class="fragment">
                 Development of tools and practices for reproducible research
             </p>
             <p class="fragment">
-                Building a data science community: open, rigorous and ethical
+                Data science education
             </p>
             <p class="fragment">
                 Data-driven research
@@ -654,6 +663,8 @@
             <h2>Diffusion MRI as a generalized linear model</h2>
             <img src="img/regression_equation.png" width=600><br>
             <p class="fragment">The objective:</p>
+            <p class="fragment">Find weights &beta; that minimize the error between the estimated y and the true y </p>
+
             <img class="fragment" src="img/ols_penalty.png" width="200px">
 
             <p class="fragment">But in our case p (number of variables) >> n (number of subjects) </p>
@@ -674,12 +685,12 @@
 
         <section>
         <h2>The Group Lasso</h2>
+        <p class="fragment">Sparsity of groups of &beta;, instead of individual &beta;</p>
+        <div class="fragment">
         <img src="img/group_lasso_penalty.png" width="600px">
         <p>Where <em>l</em> are groups of variables </p>
         <p><em>p(l)</em> is the number of variables in group <em>l</em></p>
-        <p>In our case: all the measurements of a tissue propetry within a tract</p>
-        <p class="fragment">Enforces selection of groups</p>
-        <p class="fragment">But does not enforce L1 sparsity within included groups</p>
+        </div>
         <div class="cite">
             <a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
         </div>
@@ -687,12 +698,13 @@
 
         <section>
             <h2>Sparse Group Lasso</h2>
+            <p class="fragment">Sparsity of groups of &beta; <em>and</em> of individual &beta;</p>
+            <div class="fragment">
             <img src="img/sparse_group_lasso_penalty.png" width="600px">
             <p>Enforces sparsity both at the group level and the within-group level</p>
             <p class="fragment">Subsumes the Lasso (&lambda;<sub>1</sub> = 0)</p>
             <p class="fragment">And the Group Lasso (&lambda;<sub>2</sub> = 0)</p>
-            <p class="fragment">But more meta-parameters</p>
-            <p class="fragment"> &rarr; Nested cross validation + hyperoptimization</p>
+            </div>
             <div class="cite">
                 <a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
             </div>
@@ -718,7 +730,7 @@
         </section>
 
 
-        <section>
+        <!-- <section>
             <h2>Fitting meta-parameters</h2>
             <p >Nested cross-validation</p>
             <img src="img/NestedCrossValidation1.png" height="400px">
@@ -745,7 +757,7 @@
             <div class="cite" style="position: absolute; left:380px">
                 <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
             </div>
-        </section>
+        </section> -->
 
 
         <section>
@@ -759,15 +771,31 @@
             <div style="position: absolute; top:2em; left:6em;">
             <img src="img/als_coefficients.gif" height="600px">
             </div>
-
         </section>
 
         <section>
-            <h2>Brain age </h2>
-            <img src="img/regression_equation.png" width=600><br>
-
+            <h2> Tract profiles</h2>
+            <img src="img/classification_tract_profiles.png" height="400px">
         </section>
 
+        <section>
+            <h2> Tract profiles</h2>
+            <img src="img/classification_subjects_profiles.png" height="400px">
+        </section>
+
+        <section>
+            <h2>Brain age</h2>
+            <div class="fragment">
+                <img src="img/brain_age.png" height=300>
+            </div>
+            <div class="fragment">
+                <img src="img/regression_equation.png" width=600>
+            </div>
+            <div class="cite" style="position: absolute; left:380px">
+                <a href="">Cole et al. (2019)</a>
+            </div>
+
+        </section>
 
         <section>
             <h2>Brain age </h2>
@@ -783,13 +811,23 @@
             </div>
         </section>
 
+        <section>
+            <h2> Tract profiles</h2>
+            <img src="img/regression_tract_profiles.png" height="400px">
+        </section>
+
 
     <section>
     <h2>Sparse Group Lasso</h2>
         <p class="fragment">Capitalizes on brain structure</p>
+        <p class="fragment">Accurately classifies of different states (patient/control)</p>
         <p class="fragment">Predicts continuous measures <br> (e.g, "brain age")</p>
-        <p class="fragment">Classifies of different states (patient/control)</p>
         <p class="fragment">Identifies dense or sparse biological feature sets</p>
+    </section>
+
+    <section>
+        <h2>The accuracy/interpretability tradeoff </h2>
+        <img src="./img/Accuracy-interpretability-tradeoff-4.png" height="500">
     </section>
 
 
@@ -798,7 +836,33 @@
         <img src="./img/Accuracy-interpretability-tradeoff-5.png" height="500">
     </section>
 
+    <section>
+        <h4>Automated detection of glaucoma with interpretable machine learning using clinical data and multi-modal retinal images</h4>
+        <div style="position: absolute; left:0px; top:120px;">
+			<img src="img/parmita.jpeg" height="250">
+			<br>
+			<small>Parmita Mehta  <br> (UW CSE)</small>
+		</div>
 
+        <div style="position: absolute; left:250px; top:120px;">
+			<img src="img/aaron.jpeg" height="250">
+			<br>
+			<small>Aaron Lee <br> (UW Ophthalmology)</small>
+        </div>
+
+        <div style="position: absolute; left:500px; top:120px;">
+            <image src="img/glaucoma_tree_shap.png" height=300>
+        </div>
+        <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
+
+
+    </section>
+
+    <section>
+        <h2>What about reproducibility?</h2>
+
+    </section>
 
     <section>
 		<h3>Challenge: how do we incentivize data sharing?</h3>
@@ -917,201 +981,6 @@
         </div>
 	</section>
 
-
-    <section>
-        <h2>Challenge: generating training data for ML</h2>
-    </section>
-
-	<section>
-		<h2>Scaling expertise with citizen science</h2>
-		<div style="position: absolute; left:180px; top:60px;">
-			<img src="img/anisha.jpg" height="200">
-			<br>
-            <small>Anisha Keshavan <br> (UW eScience &rarr; Octave Biosciences)</small>
-
-		</div>
-
-		<div style="position: absolute; left:520px; top:60px;">
-			<img src="img/jason.jpg" height="200">
-			<br>
-			<small>Jason Yeatman <br> (UW ILABS)</small>
-		</div>
-	</section>
-
-    <section>
-		<h3 >Quality of MRI images is a major bottleneck</h3>
-		<img src="img/t1_qc.png" height="300">
-		<div class="cite">
-			<a href="https://www.nature.com/articles/sdata2017181">Healthy Brain Network <br>(Alexander et al. 2017)</a>
-		</div>
-	</section>
-
-    <section>
-        <svg class="fragment" data-fragment-index="1" width="200" height="300"  style="position: absolute; left:358px; top:155px;">
-                <rect rx="10" ry="10" width="100" height="150" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
-        </svg>
-
-        <img src="img/braindr_overview.jpg" height=450px >
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-	<section>
-		<h4><a href="https://braindr.us">https://braindr.us</a></h4>
-
-		<img src="img/braindr.gif">
-
-		<div class="cite" style="position: absolute; left:500px;">
-			<a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-		</div>
-
-	</section>
-
-	<section>
-		<div style="position: absolute; left:200px; top:-10px;">
-			<blockquote class="twitter-tweet" data-lang="en">
-				<p lang="en" dir="ltr">Are you at work but feel like playing Tinder? Why not play braindr (<a href="https://t.co/yXw191Q7Hy">https://t.co/yXw191Q7Hy</a>) instead, and help neuroscientists rate the quality of brain images? Swipe left to fail bad quality images! Built with <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a> and <a href="https://twitter.com/Firebase?ref_src=twsrc%5Etfw">@Firebase</a> <a href="https://twitter.com/hashtag/citizenscience?src=hash&amp;ref_src=twsrc%5Etfw">#citizenscience</a> <a href="https://t.co/tpI9Y3UKOb">pic.twitter.com/tpI9Y3UKOb</a></p>&mdash; anisha (@akeshavan_)
-				<a href="https://twitter.com/akeshavan_/status/961385285182353408?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-            </div>
-    </section>
-
-	<section>
-		<h2>Multiple ratings per image</h2>
-		<img src="img/braindr_ratings_per_img.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-	</section>
-
-	<section>
-		<h2>But often, no agreement</h2>
-		<img src="img/braindr_average_rating.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-    <section>
-        <svg class="fragment" data-fragment-index="1" width="200" height="300"  style="position: absolute; left:482px; top:230px;">
-                <rect rx="10" ry="10" width="100" height="150" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
-        </svg>
-        <img src="img/braindr_overview.jpg" height=450px >
-        <div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		XGBoost (<a href="http://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf">Chen & Guestrin, 2016</a>)
-		<img src="img/braindr_rater_importance.png" height="450">
-		<br>
-		<div class="cite" style="position: absolute; left:480px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_rater_importance_per_trials.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_xgboost_ratings.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_xgboost_results.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-	</section>
-
-	<section>
-        <h2>How do we scale this up?</h2>
-        <p class="fragment">Use images classified by citizen scientists as training data</p>
-        <p class="fragment">Train a neural network on aggregated citizen scientist labels</p>
-        <p class="fragment">Transfer learning with VGG16/ImageNet</p>
-		<div class="cite" style="position: absolute; left:500px;">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-	</section>
-
-    <section>
-        <svg class="fragment" data-fragment-index="1" width="200" height="300"  style="position: absolute; left:482px; top:350px;">
-                <rect rx="10" ry="10" width="100" height="150" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
-        </svg>
-        <img src="img/braindr_overview.jpg" height=450px >
-        <div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-    <section>
-		<h2>Neural network matches expert performances</h2>
-		<img src="img/braindr_final_rocs.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-	</section>
-
-	<section>
-            <h2>Does it matter?</h2>
-            <img src="img/braindr_gm_volume.jpg" height="450">
-        <div class="cite" style="position: absolute; left:500px;">
-        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-    <section>
-        <h2>Democratizing citizen science</h2>
-        <img src="img/s4s.png">
-    </section>
-
-    <section>
-        <h2>Democratizing citizen science</h2>
-        <img src="img/hotdog_not_hotdog.png">
-    </section>
-
-    <section>
-        <h2>Swipes for Science</h2>
-
-        <div class="row">
-                <div class="imgcite two-col fragment">
-                    <div class="imghead">Lesions</div>
-                    <img src="img/braindrles.png" height="300" align="middle" alt="braindrles">
-                </div>
-                <div class="imgcite two-col fragment">
-                        <div class="imghead">ICA components</div>
-                        <img src="img/braindr_ica.png" height="300" align="middle" alt="braindr_ics">
-                </div>
-
-                <div class="imgcite two-col fragment">
-                    <div class="imghead">Astronomy </div>
-                    <img src="img/braindr_astro.png" height="300" align="middle" alt="Astro S4S">
-            </div>
-            <div class="imgcite two-col fragment">
-                    <div class="imghead">Whales </div>
-                    <img src="img/whaledr.png" height="300" align="middle" alt="Whaledr">
-            </div>
-        </div>
-    </section>
-
     <section>
         <h3 class="fragment">Challenge: how do we make it reproducible?</h3>
         <h3 class="fragment">How do we make it extensible?</h3>
@@ -1123,38 +992,6 @@
         <img src="img/nas_cover.png" height=350><br>
         <img src="img/nas.png" height=120 align="center">
     </section>
-
-	<section>
-		Deep learning projects:
-		<br>
-		<a href="https://github.com/uw-biomedical-ml/irf-segmenter">https://github.com/uw-biomedical-ml/irf-segmenter</a>
-		<br>
-		<a href="https://github.com/uw-biomedical-ml/oir"> https://github.com/uw-biomedicasl-ml/oir</a>
-		<br>
-		<a href="https://github.com/uw-biomedical-ml/mri2mri">https://github.com/uw-biomedical-ml/mri2mri</a>
-		<br>
-		<br>
-		Braindr + Swipes for Science:
-		<br>
-        <a href="https://github.com/akeshavan/braindr-analysis">https://github.com/akeshavan/braindr-analysis</a>
-        <a href="https://github.com/swipesforscience">https://github.com/swipesforscience</a>
-
-		<br>
-		<br>
-        Automated Fiber Quantification:
-        <br>
-        <a href="https://github.com/richford/AFQ-Insight">https://github.com/richford/AFQ-Insight</a>
-        <a href="https://github.com/yeatmanlab/pyAFQ">https://github.com/yeatmanlab/pyAFQ</a>
-		<a href="https://github.com/yeatmanlab/AFQ-Browser">https://github.com/yeatmanlab/AFQ-Browser</a>
-    </section>
-
-    <section>
-            <h3>Challenge: how do we make it reproducible?</h3>
-            <h3>How do we make it extensible?</h3>
-            <h4>Open source software is a necessary complement to brain observatories</h4>
-            <h3 class="fragment">How do we make it sustainable?</h3>
-    </section>
-
 
     <section>
         <h2> Community-developed open-source software</h2>
@@ -1214,15 +1051,8 @@
         <div class="cite" style="position: absolute; left:0px">
         <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
-</section>
+    </section>
 
-	<!--
-	<section>
-		<a href="http://joss.theoj.org/"></a><img src="img/JOSS_banner.png" height="300">
-		<h3>Rigorously evaluate open source software</h3>
-		<h3>Provide a canonical citation for software that meets these standards</h3>
-	</section>
-	-->
 	<section>
 		<h2>How can we get more people involved?</h2>
 	    <p class="fragment">Methods in data science are rapidly changing</p>
@@ -1259,8 +1089,10 @@
 
 	<section>
         <img src="img/neurohack-collage.png" height="400">
+        <p>
         <a href="http://neurohackademy.org/">NeuroHackademy: A Summer Institute in Neuroscience and Data Science</a><br>
         <img src="img/nimh-logo.gif" height="50px">
+        </p>
         <div class="cite" style="position: absolute; left:450px">
                 <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018) PNAS</a>
         </div>

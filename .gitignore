@@ -1,3 +1,6 @@
 .idea/*
 node_modules/*
 .DS_Store
+ipynb/.ipynb_notebooks
+ipynb/*.png
+ipynb/*.trk
