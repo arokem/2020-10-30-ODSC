@@ -776,22 +776,33 @@
 
         <section>
         <h2>The Group Lasso</h2>
-        <p class="fragment">Sparsity of groups of &beta;, instead of individual &beta;</p>
+        <p>Sparsity of groups of &beta;, instead of individual &beta;</p>
+        <p class="fragment">Selects data by tracts</p>
         <!-- <div class="fragment">
         <img src="img/group_lasso_penalty.png" width="600px">
         <p>Where <em>l</em> are groups of variables </p>
         <p><em>p(l)</em> is the number of variables in group <em>l</em></p>
         </div> -->
-        <h2 class="fragment">Sparse Group Lasso</h2>
-        <p class="fragment">Sparsity of groups of &beta; <em>and</em> of individual &beta;</p>
-            <!-- <div class="fragment">
+        <div class="fragment">
+        <h2>Sparse Group Lasso</h2>
+        <p>Sparsity of groups of &beta; <em>and</em> of individual &beta;</p>
+        <p class="fragment">Selects data by tracts <em>and</em> sparsify within tract</p>
+        </div>
+
+        <div class="fragment">
+            The data is used to determine strength of group and individual &beta; sparsity
+            <p class="fragment">
+                Nested cross-validation
+            </p>
+        </div>
+        <!-- <div class="fragment">
             <img src="img/sparse_group_lasso_penalty.png" width="600px">
             <p>Enforces sparsity both at the group level and the within-group level</p>
             <p class="fragment">Subsumes the Lasso (&lambda;<sub>1</sub> = 0)</p>
             <p class="fragment">And the Group Lasso (&lambda;<sub>2</sub> = 0)</p>
             </div> -->
             <div class="cite">
-                <a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
+                <a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a><br>
                 <a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
             </div>
         </section>
@@ -816,36 +827,6 @@
         </section>
 
 
-        <!-- <section>
-            <h2>Fitting meta-parameters</h2>
-            <p >Nested cross-validation</p>
-            <img src="img/NestedCrossValidation1.png" height="400px">
-            <div class="cite" style="position: absolute; left:380px">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
-            </div>
-
-        </section>
-
-        <section>
-            <h2>Fitting meta-parameters</h2>
-            <p >Nested cross-validation</p>
-            <img src="img/NestedCrossValidation2.png" height="400px">
-            <div class="cite" style="position: absolute; left:380px">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
-            </div>
-
-        </section>
-
-        <section>
-            <h2>Fitting meta-parameters</h2>
-            <p >Nested cross-validation</p>
-            <img src="img/NestedCrossValidation3.png" height="400px">
-            <div class="cite" style="position: absolute; left:380px">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
-            </div>
-        </section> -->
-
-
         <section>
             <h2> Accurately classifies patients/controls</h2>
             <img src="img/als_classification_results.png" height="450px">
@@ -867,6 +848,11 @@
         <section>
             <h2> Tract profiles</h2>
             <img src="img/classification_subjects_profiles.png" height="400px">
+        </section>
+
+        <section>
+
+
         </section>
 
         <section>
@@ -912,7 +898,8 @@
     </section>
 
 
-    <div class="row">
+    <section>
+        <div class="row">
         <div class="imgcite two-col">
             <img src="./img/haystacks.jpg">
          </div>
@@ -920,6 +907,7 @@
             <img src="./img/forest.png">
         </div>
         </div>
+    </section>
 
     <!-- <section>
         <h2>The accuracy/interpretability tradeoff </h2>
@@ -1323,9 +1311,33 @@
         <div class="cite" style="position: absolute; left:200px">
         Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
 
+    </section>
+
+    <section>
+        <h2>Nested cross-validation</h2>
+        <img src="img/NestedCrossValidation1.png" height="400px">
+        <div class="cite" style="position: absolute; left:380px">
+            <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
+        </div>
 
     </section>
 
+    <section>
+        <h2>Nested cross-validation</h2>
+        <img src="img/NestedCrossValidation2.png" height="400px">
+        <div class="cite" style="position: absolute; left:380px">
+            <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Nested cross-validation</h2>
+        <img src="img/NestedCrossValidation3.png" height="400px">
+        <div class="cite" style="position: absolute; left:380px">
+            <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
+        </div>
+    </section>
 
 
 	</div>
