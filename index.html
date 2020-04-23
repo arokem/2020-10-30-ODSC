@@ -710,15 +710,15 @@
         <p class="fragment">The objective:</p>
         <p class="fragment">Find weights &beta; that minimize the error between the estimated y and the true y </p>
 
-        <!-- <img class="fragment" src="img/ols_penalty.png" width="200px"> -->
+        <img class="fragment" src="img/ols_penalty.png" width="200px">
 
         <p class="fragment">But in our case p (number of variables) >> n (number of subjects) </p>
         <p class="fragment">Many different possible solutions!</p>
+    </section>
 
-        <div class="fragment">
+    <section>
         <h2>Regularization</h2>
         <p>Get the weights &beta; that minimize the error and are as sparse as possible</p>
-        </div>
         <p class="fragment">For example: the Lasso (<a href="http://statweb.stanford.edu/~tibs/lasso/lasso.pdf">Tibshirani, 1996</a>)</p>
         <div class="fragment">
         <img src="img/lasso_penalty.png" width="400px">
@@ -726,6 +726,11 @@
 
         </div>
         </div>
+    </section>
+
+    <section>
+        <h2>The accuracy/interpretability tradeoff </h2>
+        <img src="./img/Accuracy-interpretability-tradeoff-2.png" height="500">
     </section>
 
     <section>
@@ -740,7 +745,7 @@
     </section>
 
 
-	<section id="afq-insight">
+	<!-- <section id="afq-insight">
             Multidimensional analysis and detection of informative features in diffusion MRI measurements of human white matter
         <div style="position: absolute; left:40px; top:90px;">
         <img src="img/adam.jpeg" height="300">
@@ -762,7 +767,7 @@
                 <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
         </div>
 
-        </section>
+    </section> -->
 
         <section>
             <h2>Diffusion MRI data has group structure</h2>
@@ -772,26 +777,21 @@
         <section>
         <h2>The Group Lasso</h2>
         <p class="fragment">Sparsity of groups of &beta;, instead of individual &beta;</p>
-        <div class="fragment">
+        <!-- <div class="fragment">
         <img src="img/group_lasso_penalty.png" width="600px">
         <p>Where <em>l</em> are groups of variables </p>
         <p><em>p(l)</em> is the number of variables in group <em>l</em></p>
-        </div>
-        <div class="cite">
-            <a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
-        </div>
-        </section>
-
-        <section>
-            <h2>Sparse Group Lasso</h2>
-            <p class="fragment">Sparsity of groups of &beta; <em>and</em> of individual &beta;</p>
-            <div class="fragment">
+        </div> -->
+        <h2 class="fragment">Sparse Group Lasso</h2>
+        <p class="fragment">Sparsity of groups of &beta; <em>and</em> of individual &beta;</p>
+            <!-- <div class="fragment">
             <img src="img/sparse_group_lasso_penalty.png" width="600px">
             <p>Enforces sparsity both at the group level and the within-group level</p>
             <p class="fragment">Subsumes the Lasso (&lambda;<sub>1</sub> = 0)</p>
             <p class="fragment">And the Group Lasso (&lambda;<sub>2</sub> = 0)</p>
-            </div>
+            </div> -->
             <div class="cite">
+                <a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
                 <a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
             </div>
         </section>
@@ -911,7 +911,17 @@
         <p class="fragment">Identifies dense or sparse biological feature sets</p>
     </section>
 
-    <section>
+
+    <div class="row">
+        <div class="imgcite two-col">
+            <img src="./img/haystacks.jpg">
+         </div>
+        <div class="imgcite two-col">
+            <img src="./img/forest.png">
+        </div>
+        </div>
+
+    <!-- <section>
         <h2>The accuracy/interpretability tradeoff </h2>
         <img src="./img/Accuracy-interpretability-tradeoff-4.png" height="500">
     </section>
@@ -920,7 +930,7 @@
     <section>
         <h2>The accuracy/interpretability tradeoff </h2>
         <img src="./img/Accuracy-interpretability-tradeoff-5.png" height="500">
-    </section>
+    </section> -->
 
     <section>
         <h2>Reproducibility and open science</h2>
