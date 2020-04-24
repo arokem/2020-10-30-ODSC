@@ -43,7 +43,7 @@
                 context.lineTo(tox-headlen*Math.cos(angle-Math.PI/6),toy-headlen*Math.sin(angle-Math.PI/6));
                 context.moveTo(tox, toy);
                 context.lineTo(tox-headlen*Math.cos(angle+Math.PI/6),toy-headlen*Math.sin(angle+Math.PI/6));}
-		</script>
+        </script>
 
 	</head>
 	<body>
@@ -296,6 +296,27 @@
 	</section>
 
 	<section>
+        <h4>Diffusion MRI</h4>
+
+		<div style="position: absolute; left: 14px;">
+			<img src="img/tensor-stats1.png" height="400"  >
+			<div style="position: absolute; left: 75px; top: 420px;">
+                <small>Mean diffusivity</small>
+
+			</div>
+			<div style="position: absolute; left: -8px;">
+				<img src="img/md-scale.png" height="40" >
+			</div>
+			<div style="position: absolute; left: 222px; top:432px; ">
+				<img src="img/md-units.png" height="50" >
+            </div>
+        </div>
+
+    </section>
+
+
+
+	<section>
 		<h4>Diffusion MRI</h4>
 		<div class = "fragment fade-in" style="position: absolute">
 			<canvas id="arrows-aniso-horiz" width="1000" height="1000">
@@ -334,7 +355,7 @@
             </div>
         </section>
 
-	<section>
+	<!-- <section>
 		<h4>Diffusion MRI</h4>
         <img src="img/up-and-down-arrow.png" height=200 style="position: absolute; left: 200px; top: 200px;">
         <img src="img/dmri2.png" height="500">
@@ -356,11 +377,12 @@
                     <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a>
                 </div>
     </section>
-
+ -->
 
 	<section>
-		<h4>Diffusion statistics</h4>
-		<div class="fragment" style="position: absolute; left: 14px;">
+        <h4>Diffusion MRI</h4>
+
+		<div style="position: absolute; left: 14px;">
 			<img src="img/tensor-stats1.png" height="400"  >
 			<div style="position: absolute; left: 75px; top: 420px;">
 				<small>Mean diffusivity</small>
@@ -375,10 +397,10 @@
 		<div class="fragment fade-in" style="position: absolute; left: 7px;">
 			<img src="img/tensor-stats2.png" height="400"  >
 
-			<div style="position: absolute; left: 350px; top:432px; ">
+			<!-- <div style="position: absolute; left: 350px; top:432px; ">
 				<video width="200" autoplay loop>
 					<source src="./img/diffusion-fa-251.mov">
-			</div>
+			</div> -->
 
 			<div style="position: absolute; left: 350px; top: 420px;">
 				<small>Fractional anisotropy</small>
@@ -485,9 +507,7 @@
     <section>
         <h3>From diffusion to anatomy</h3>
         <p>The 3D structure of each brain is unique</p>
-
         <img src="./img/tract_groups.png" height="400">
-
         <div class="cite">
             <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4635921/">Thiebaut de Schotten (2015)</a>
         </div>
@@ -497,7 +517,7 @@
         <h2>Automated tract segmentation</h2>
         <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
-            <div class="imgcite two-col fragment">
+            <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-CST_L.gif" width="400">
             </div>
             <div class="imgcite two-col fragment">
@@ -510,7 +530,7 @@
         <h2>Automated tract segmentation</h2>
         <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
-            <div class="imgcite two-col fragment">
+            <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-ARC_L.gif" width="400">
             </div>
             <div class="imgcite two-col fragment">
@@ -523,7 +543,7 @@
         <h2>Automated tract segmentation</h2>
         <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
-            <div class="imgcite two-col fragment">
+            <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-IFO_L.gif" width="400">
             </div>
             <div class="imgcite two-col fragment">
@@ -575,20 +595,29 @@
         <img align="center" src="img/pyafq_segmentation2.gif" height="400">
 	</section>
 
-	<section>
+    <h2>Diffusion MRI as a generalized linear model</h2>
+    <img src="img/dMRI_group_structure.png" height="450px">
+    <div class="cite" style="position: absolute; left:380px">
+        <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & Rokem (2020)</a>
+    </div>
 
+    <section>
+        <h3>Analysis of tractometry data</h3>
+
+        <p class="fragment">Select a region of interest</p>
 
     </section>
 
     <section>
         <h2>Amyotrophic Lateral Sclerosis</h2>
         <div class="row">
-        <div classv="imgcite two-col fragment">
+            <div class="imgcite two-col">
+                <img src="img/LouGehrigGoudeycard.jpg" width="250" align="middle">
+        </div>
+        <div class="imgcite two-col fragment">
             <p class="fragment">Neurodegenerative disease</p>
             <p class="fragment">Affects motor neurons</p>
-        </div>
-        <div class="imgcite two-col">
-                <img src="img/LouGehrigGoudeycard.jpg" width="250" align="right">
+            <p class="fragment">Etiology varies widely</p>
         </div>
         </div>
     </section>
