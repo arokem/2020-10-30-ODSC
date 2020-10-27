@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="description" content="Talk at UW Psych Seminar">
+		<meta name="description" content="Talk at ODSC">
 		<meta name="author" content="Ariel Rokem">
 
-		<title> Haystacks and forests </title>
+		<title> Open-source software for neuroscience </title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/arokem.css">
@@ -52,20 +52,39 @@
 
 	<section>
 		<em>
-		<h2>Finding needles in haystacks and seeing the forest from the trees</h2>
+		<h2>The era of brain observatories </h2>
         </em>
-        <h4>Relating brain connections and behavior without getting lost in the data</h4>
-		<br>May 6th, 2020
-		<br>Department of Psychology, University of Washington
+        <h4>Open-source tools for data-driven neurosciences</h4>
+		<br>October 30th, 2020
+		<br>Open Data Science Conference West
 		<br>
-		<p><a href="http://arokem.org">Ariel Rokem</a>,
-		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
-		<p>  <small>Follow along at: <t><a href="https://arokem.github.io/2020-UW-Psych">https://arokem.github.io/2020-UW-Psych</t></a></small></p>
+		<p><a href="http://arokem.org">Ariel Rokem</a></p>
+        <p>University of Washington</p>
+		<p>  <small>Follow along at: <t><a href="https://arokem.github.io/2020-10-30-ODSC">https://arokem.github.io/2020-10-30-ODSC</t></a></small></p>
 		<a href="https://escience.washington.edu"><img src="img/eScience.png" height="100px" alt="eScience logo" align="middle"></a>
 		<br>
 		<img src="img/cc-by.png" height="30px" alt="License" align="middle">
     </section>
 
+	<section>
+		<div style="position: absolute; left:0px; top:100px;" align="left">
+            <div><img src="img/adam.jpeg" height="100px"> <br> <small> Adam Richie-Halford</small></div>
+            <div><img src="img/manjari.png" height="100px"> <br><small>Manjari Narayan</small></div>
+            <div><img src="img/john-kruper.png" height="100px" align="center"> <br> <small>John Kruper</small></div>
+		</div>
+
+		<div style="position: absolute; left:500px; top:80px;">
+			<img src="img/msdse-sponsors.png" height="50px">
+			<br>
+			<img src="img/nimh-logo.gif" height="50px">
+			<img src="img/nibib-logo.png" height="50px">
+			<br>
+			<img src="img/BMGF-logo.png" height="100px">
+			<img src="img/nsf-logo.jpeg" height="100px">
+			<br>
+			<img src="img/eScience.png" height="80px">
+		</div>
+	</section>
 
     <section>
         <h4>How do we relate brain to behavior?</h4>
@@ -143,18 +162,6 @@
         </div>
     </section>
 
-
-    <section>
-        <h3>Human Connectome Project extensions</h3>
-        <p>Lifespan development</p>
-        <p>Brain aging and dementia</p>
-        <p>Alzheimer's subtypes</p>
-        <p>Anxiety and depression in teenagers</p>
-        <p>Amish Connectome (mental illness)</p>
-        <p>Low vision and blindness</p>
-    </section>
-
-
     <section>
 		<h2>Opportunities</h2>
         <p class="fragment">New data sets will enable important new discoveries</p>
@@ -163,53 +170,34 @@
 
     <section>
         <h2>Data-driven discovery</h2>
-        <p class="fragment">Automated processing (e.g., <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman and Rokem, 2019</a>)</p>
-        <p class="fragment">High-performance computing <br>(e.g., <a href="http://conference.scipy.org/proceedings/scipy2018/adam_richie-halford.html">Richie-Halford and Rokem, 2018 </a>, <a href="http://www.vldb.org/pvldb/vol10/p1226-mehta.pdf">Mehta et al., 2017</a>)</p>
-        <p class="fragment">Data integration (e.g., <a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">Mehta et al., 2020</a>)</p>
-        <p class="fragment"><b>Machine learning and predictive modeling</b></p>
+        <p class="fragment">Data aggregation and integration
+        <p class="fragment">Machine learning and data mining
+        <p class="fragment">Data visualization and communication
+        <p class="fragment">Insights into the brain basis of complex behaviors
+        <p class="fragment">Personalized medicine
     </section>
 
     <section>
-        <h2>The accuracy/interpretability tradeoff </h2>
-        <img src="./img/Accuracy-interpretability-tradeoff-0.png" height="500">
-    </section>
+        <h2>Challenges</h2>
+        <div class="row" data-fragment-index="1">
+                <div class="imgcite two-col fragment" data-fragment-index="2">
+                    <h3>Scale</h3>
+                    <p class="fragment" data-fragment-index="3">How do we adapt research to big datasets?</p>
+                    <p class="fragment" data-fragment-index="8">Cloud computing </p>
 
+                </div>
+                <div class="imgcite two-col fragment" data-fragment-index="4">
+                    <h3>Complexity</h3>
+                    <p class="fragment" data-fragment-index="5">How do we analyze and interpret multi-dimensional data?</p>
+                    <p class="fragment" data-fragment-index="9">Machine learning: balancing accuracy and interpretability</p>
 
-    <section>
-        <h2>The accuracy/interpretability tradeoff </h2>
-        <img src="./img/Accuracy-interpretability-tradeoff-1.png" height="500">
-    </section>
+                </div>
+                <div class="imgcite two-col fragment" data-fragment-index="6">
+                    <h3>Socio-technical</h3>
+                    <p class="fragment" data-fragment-index="7">How do we collaborate, publish and teach?</p>
+                    <p class="fragment" data-fragment-index="10">Open science: sharing software, data, and training</p>
 
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 class="fragment">Data-driven discovery in human neuroscience</h3>
-        <h4 class="fragment">Studying brain connections with diffusion MRI </h4>
-        <h4 class="fragment">Automated tract segmentation and tractometry</h4>
-        <h3 class="fragment">Applications</h3>
-        <h4 class="fragment">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 class="fragment">Brain development: seeing the forest and the trees</h4>
-        <h3 class="fragment">Expanding access to data-driven research</h3>
-        <h4 class="fragment">Publishing data and results in exploratory data visualizations</h4>
-        <h4 class="fragment">Developing open-source software</h4>
-
-        <h4 class="fragment">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3>Data-driven discovery in human neuroscience</h3>
-        <h4>Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3 style="color:#D3D3D3;">Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
+                </div>
         </div>
     </section>
 
@@ -462,15 +450,6 @@
     <section>
         <h3>From diffusion to anatomy</h3>
         <video width="500" autoplay loop>
-          <source src="./img/cc_tube_movie-373.mov">
-        </video>
-        <div class="cite" style="position: absolute; left:0px top:500px">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-    </div>
-    </section>
-    <section>
-        <h3>From diffusion to anatomy</h3>
-        <video width="500" autoplay loop>
           <source src="./img/whole_brain.mp4">
         </video>
         <div class="cite" style="position: absolute; left:0px top:500px">
@@ -480,35 +459,16 @@
 
     <section>
         <h3>From diffusion to anatomy</h3>
-        <p>The 3D structure of each brain is unique</p>
-        <img src="./img/tract_groups.png" height="400">
-        <div class="cite">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4635921/">Thiebaut de Schotten (2015)</a>
-        </div>
+        <video width="500" autoplay loop>
+          <source src="./img/cc_tube_movie-373.mov">
+        </video>
+        <div class="cite" style="position: absolute; left:0px top:500px">
+            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
+    </div>
     </section>
-
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3>Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4>Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3 style="color:#D3D3D3;">Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
 
     <section>
         <h2>Automated tract segmentation</h2>
-        <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
             <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-CST_L.gif" width="400">
@@ -521,7 +481,6 @@
 
     <section>
         <h2>Automated tract segmentation</h2>
-        <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
             <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-ARC_L.gif" width="400">
@@ -534,7 +493,6 @@
 
     <section>
         <h2>Automated tract segmentation</h2>
-        <a href="https://autofq.org">https://autofq.org</a>
         <div class="row">
             <div class="imgcite two-col">
                 <img align="center" src="img/AFQ-IFO_L.gif" width="400">
@@ -546,12 +504,19 @@
     </section>
 
     <section>
-        <h3>Tractometry</h3>
-        <p>The tracts are the coordinate frame for quantitative analysis</p>
-        <img align="center" src="img/pyafq_segmentation1.gif" height="400">
+        <h2>Automated tract segmentation</h2>
+        <div>
+            <a href="https://autofq.org">https://autofq.org</a>
+            <div style="position: absolute; left:200px; top:80px;">
+            <img src="img/john-kruper.png" height="100px" align="center"> <br> <small>John Kruper</small>
+            </div>
+        </div>
+            <iframe src="https://gist.githack.com/36000/9a4683a3fe90be14abaccf3d35077e4a/raw/be733dc73aa9a915b655c6fe9b349cebda56be67/sub-103818_dwi_space-RASMM_model-DKI_desc-det-reco80_viz.html" height="600" width="850" title="Iframe Example"></iframe>
+        <div class="cite">
+
     </section>
 
-	<section>
+    <section>
         <h3>Tractometry</h3>
         <p>The tracts are the coordinate frame for quantitative analysis</p>
         <img align="center" src="img/tractometry0.png" height="450">
@@ -594,26 +559,7 @@
         <div class="imgcite two-col fragment" style="position:absolute; top:120px; left:450px;">
             <img align="center" src="img/tractometry6_2.png" height="450">
 	    </div>
-
     </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3>Applications</h3>
-        <h4>Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3 style="color:#D3D3D3;">Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
 
     <section>
         <h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
@@ -651,6 +597,566 @@
         </div>
     </section>
 
+    <section>
+        <h2>Challenges</h2>
+        <div class="row" ">
+                <div>
+                    <h3>Scale</h3>
+                    <p>How do we adapt research to big datasets?</p>
+                    <p>Cloud computing </p>
+
+                </div>
+                <div>
+                    <h3 style="color:#D3D3D3;">Complexity</h3>
+                    <p style="color:#D3D3D3;">How do we analyze and interpret multi-dimensional data?</p>
+                    <p style="color:#D3D3D3;">Machine learning: balancing accuracy and interpretability</p>
+
+                </div>
+                <div>
+                    <h3 style="color:#D3D3D3;">Socio-technical</h3>
+                    <p style="color:#D3D3D3;">How do we collaborate, publish and teach?</p>
+                    <p style="color:#D3D3D3;">Open science: sharing software, data, and training</p>
+
+                </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>AWS Batch</h2>
+        <div class="row">
+            <div style="float: left; width: 20%;">
+                <img src="img/Compute_AWSBatch_LARGE.png" height="250">
+            </div>
+            <div style="float: left; width: 78%; padding-left: 5px;">
+                <p class="fragment">Pros:</p>
+                <ul>
+                    <li class="fragment">Abstracts away infrastructure details</li>
+                    <li class="fragment">Dynamically provisions AWS resources based on requirements of user-submitted jobs</li>
+                    <li class="fragment">Allows scientists to run 100,000+ batch jobs</li>
+                </ul>
+                <p class="fragment">Cons:</p>
+                <ul>
+                    <li class="fragment">AWS Web Console resists automation</li>
+                    <li class="fragment">Requires learning new terminology</li>
+                    <li class="fragment">Does not easily facilitate reproducibility</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>AWS Batch workflow</h2>
+        <ul>
+            <li class="fragment">Build a Docker image (local machine)</li>
+            <li class="fragment">Create an Amazon ECR repository for the image (web)</li>
+            <li class="fragment">Push the build image to ECR (local machine)</li>
+            <li class="fragment">Create IAM Roles, compute environment, job queue (web)</li>
+            <li class="fragment">Create a job definition that uses the built image (web)</li>
+            <li class="fragment">Submit jobs (web)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Goal</h2>
+        <p>Automate submission of Python jobs to AWS Batch</p>
+        <div class="fragment">
+        <h2>Introducing: <a href="https://nrdg.github.io/cloudknot">Cloudknot</a></h2>
+        <div><img src="img/adam.jpeg" height="100px"> <br> <small> Adam Richie-Halford</small></div>
+        </div>
+    </section>
+
+    <section id="single-program">
+        <h2>Single Program</h2>
+        <div class="row">
+            <div style="float: left; width: 45%;">
+                <pre class="stretch"><code data-trim data-noescape>
+                    import cloudknot as ck
+
+                    def awesome_func(...):
+                        ...
+
+                    knot = <mark>ck.Knot(func=awesome_func)</mark>
+
+
+
+
+                </code></pre>
+            </div>
+            <div style="float: left; width: 55%;">
+                <img src="img/cloudknot_single_program.svg" height="500" align="middle" alt="Cloudknot workflow">
+            </div>
+        </div>
+    </section>
+
+    <section id="multiple-data">
+        <h2>Multiple Data</h2>
+        <div class="row">
+            <div style="float: left; width: 45%;">
+                <pre class="stretch"><code data-trim data-noescape>
+                    import cloudknot as ck
+
+                    def awesome_func(...):
+                        ...
+
+                    knot = ck.Knot(func=awesome_func)
+
+                    ...
+
+                    future = <mark>knot.map(args)</mark>
+                </code></pre>
+            </div>
+            <div style="float: left; width: 55%;">
+                <img src="img/cloudknot_workflow.svg" height="500" align="middle" alt="Cloudknot workflow">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="api">
+        <h2>Example</h2>
+            Estimating pi using Monte Carlo Simulations
+        <div class="imgcite imgcol">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Pi_30K.gif" height="450" align="middle" alt="Estimation of pi using Monte Carlo">
+            <br>
+            By nicoguaro [<a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Pi_30K.gif">from Wikimedia Commons</a>
+        </div>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Define the user defined function (UDF).</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>N.B. we import prerequisites inside the UDF.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              <mark>import numpy as np</mark>
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Instantiate a Knot, creating resources on AWS.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          <mark>knot = ck.Knot(name='pi-calc', func=monte_pi_count)</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Submit jobs with the <code>map()</code> method.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          <mark>future = knot.map(args)</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Summarize the status of submitted jobs.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          future = knot.map(args)
+
+          <mark>knot.view_jobs()</mark>
+          [out]: Job ID          Name           Status
+                 ----------------------------------------
+                 fcd2a14b...     pi-calc-0      PENDING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Query the result status.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          future = knot.map(args)
+
+          knot.view_jobs()
+
+          done_yet = <mark>future.done()</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Retrieve the result.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          future = knot.map(args)
+
+          knot.view_jobs()
+
+          done_yet = future.done()
+          <mark>res = future.result()</mark>
+
+
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Or retrieve previously submitted results.</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          future = knot.map(args)
+
+          knot.view_jobs()
+
+          done_yet = future.done()
+          res = future.result()
+          <mark>res = knot.jobs[-1].result() # Equivalent to future.result()</mark>
+
+
+
+
+
+
+
+
+
+        </code></pre>
+    </section>
+    <section data-transition="fade-in fade-out">
+        <p>Or add a callback to the final result</p>
+        <pre class="stretch"><code data-trim data-noescape>
+          import cloudknot as ck
+
+          def monte_pi_count(n):
+              import numpy as np
+              x = np.random.rand(n)
+              y = np.random.rand(n)
+              return np.count_nonzero(x * x + y * y <= 1.0)
+
+          knot = ck.Knot(name='pi-calc', func=monte_pi_count)
+
+          n_jobs, n_samples = 1000, 100000000
+          import numpy as np
+          args = np.ones(n_jobs, dtype=np.int32) * n_samples
+          future = knot.map(args)
+
+          knot.view_jobs()
+
+          done_yet = future.done()
+          res = future.result()
+          res = knot.jobs[-1].result()  # Equivalent to future.result()
+
+
+          PI = 0.0
+          def <mark>pi_from_future</mark>(future):
+              global PI
+              PI = 4.0 * np.sum(future.result()) / (n_samples * n_jobs)
+
+          future.add_done_callback(<mark>pi_from_future</mark>)
+        </code></pre>
+    </section>
+
+    <section>
+        <p>MRI analysis pipeline</p>
+        <img src="img/mri_benchmark.png" height="400", style="background-color:white;">
+
+        <div class="cite">
+            Compared to <a href="http://www.vldb.org/pvldb/vol10/p1226-mehta.pdf">Mehta et al., 2017</a>
+        </div>
+    </section>
+
+    <section id="mri-takeaways">
+        <h2>Analysis of MRI data</h2>
+        <h3>Takeaway</h3>
+        <ul>
+            <li>Previous MRI benchmark was performed by a team of 4 graduate students and postdocs over 6 months.</li>
+            <li>Cloudknot implementation took Ariels one day</li>
+            <li>For 25 subjects, Cloudknot was 10-25% slower</li>
+            <li>Cloudknot favors workloads where development time is more important than execution time</li>
+            <li class="fragment" data-fragment-index="2">Simplified API makes cloud computing more accessible.</li>
+            <ol class="fragment" data-fragment-index="2">
+                <p><code>import cloudknot</code></p>
+                <p><code>knot = cloudknot.Knot()</code></p>
+                <p><code>results = knot.map(sequence)</code></p>
+            </ul>
+
+        </ul>
+    </section>
+
+    <section>
+        <p>Github repo: <a href="https://github.com/nrdg/cloudknot">https://github.com/nrdg/cloudknot</a></p>
+        <p>Documentation: <a href="https://nrdg.github.io/cloudknot">https://nrdg.github.io/cloudknot/index.html</a></p>
+        <p>We welcome issues and contributions!</p>
+    </section>
+
+    <section>
+        <h2>Challenges</h2>
+        <div class="row" ">
+                <div>
+                    <h3 style="color:#D3D3D3;">Scale</h3>
+                    <p style="color:#D3D3D3;">How do we adapt research to big datasets?</p>
+                    <p style="color:#D3D3D3;">Cloud computing </p>
+
+                </div>
+                <div>
+                    <h3 >Complexity</h3>
+                    <p>How do we analyze and interpret multi-dimensional data?</p>
+                    <p>Machine learning: balancing accuracy and interpretability</p>
+
+                </div>
+                <div>
+                    <h3 style="color:#D3D3D3;">Socio-technical</h3>
+                    <p style="color:#D3D3D3;">How do we collaborate, publish and teach?</p>
+                    <p style="color:#D3D3D3;">Open science: sharing software, data, and training</p>
+
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>The accuracy/interpretability tradeoff </h2>
+        <img src="./img/Accuracy-interpretability-tradeoff-0.png" height="500">
+    </section>
+
+    <section>
+        <h2>The accuracy/interpretability tradeoff </h2>
+        <img src="./img/Accuracy-interpretability-tradeoff-1.png" height="500">
+    </section>
+
+
+    <section>
+        <h3>Tractometry for group comparison</h3>
+        <div class="row">
+            <div class="imgcite two-col">
+                <img src="img/pyafq_segmentation2.gif">
+            </div>
+            <div class="imgcite two-col">
+                    <img data-fragment-index="2" src="img/right-arrow.png" height=20 style="position:absolute; top:280px; left:420px;">
+        <img src="img/sarica_results2.png" height=300 style="position:absolute; top:200px; left:550px;">
+            </div>
+        <div class="cite" data-fragment-index="2">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+
+        </div>
+    </section>
+
 	<section>
         <h3>Tractometry for prediction</h3>
         <div class="row">
@@ -661,31 +1167,6 @@
                     <img data-fragment-index="2" src="img/right-arrow.png" height=20 style="position:absolute; top:280px; left:420px;">
 
                 <p style="position:absolute; top:270px; left:550px;">Patient/Control?</p>
-    </section>
-
-    <section>
-        <h2>ALS classification</h2>
-        <img src="./img/sarica-ml.png" height="400">
-		<div class="cite" style="position: absolute; left:380px">
-            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & <b>Rokem</b> (2018)</a>
-    </div>
-    </section>
-
-    <section>
-        <h2>Challenges</h2>
-        <p class="fragment">Requires a region of interest</p>
-        <p class="fragment">Otherwise: it's like finding a needle in a haystack!</p>
-    </section>
-
-
-    <section>
-        <h2>The accuracy/interpretability tradeoff </h2>
-        <img src="./img/Accuracy-interpretability-tradeoff-0.png" height="500">
-    </section>
-
-    <section>
-        <h2>The accuracy/interpretability tradeoff </h2>
-        <img src="./img/Accuracy-interpretability-tradeoff-1.png" height="500">
     </section>
 
     <section>
@@ -803,256 +1284,106 @@
         </section>
 
         <section>
-            <h2>Outline</h2>
-            <div align="left">
-            <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-            <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-            <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-            <h3>Applications</h3>
-            <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-            <h4>Brain development: seeing the forest and the trees</h4>
-            <h3 style="color:#D3D3D3;">Expanding access to data-driven research</h3>
-            <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-            <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-            <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-            </div>
-        </section>
+            <h2>Introducing <a href="https://richford.github.io/groupyr">Groupyr</a></h2>
+            https://richford.github.io/groupyr
 
-        <section>
-            <h2>Cognitive development</h2>
-            <p class="fragment">How do adverse childhood events affect development?</p>
-            <p class="fragment">How do they affect brain connectivity?</p>
-        </section>
-
-        <section>
-            <h2>Brain development</h2>
-            <div class="row">
-                <div class="imgcite two-col fragment">
-                    <img src="img/brain_development1.png" height="400px">
-                <div class="cite" style="position: absolute; top:40em; left:20em;">
-                    <a href="https://www.pnas.org/content/101/21/8174">Gogtay et al. (200)</a>
+            <div>
+                <div style="position: absolute; left:300px; top:150px;">
+                <img src="img/adam.jpeg" height="100px"> <br> <small> Adam Richie-Halford</small>
+                </div>
+                <div style="position: absolute; left:500px; top:150px;">
+                    <img src="img/manjari.png" height="100px"> <br> <small> Manjari Narayan</small>
                 </div>
 
-                </div>
-
-                <div class="imgcite two-col fragment">
-                    <img src="img/brain_development2.png" height="400px">
-                    <div class="cite">
-                        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman and <b>Rokem</b> (2019)</a>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section>
-            <h2>And white matter?</h2>
-            <p class="fragment">Cortical thinning reflects myelination (<a href="https://www.pnas.org/content/116/41/20750.abstract">Natu et al., 2019</a>)</p>
-            <p class="fragment">White matter tracts mature in waves over a long time (<a href="https://www.jneurosci.org/content/31/30/10937">Lebel and Beaulieau, 2012)</a></p>
-            <p class="fragment">Challenge: focusing on any particular location risks losing the full picture</p>
-            <p class="fragment">Loses the forest for the trees</p>
-        </section>
-
-        <section>
-            <img src="img/lebel.jpg" height="500px">
-            <div class="cite"><a href="https://www.jneurosci.org/content/31/30/10937">Lebel and Beaulieau, 2012</a></div>
 
         </section>
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age0.png" height="500px">
-        </section>
+    <section>
+        <h2>Groupyr</h2>
+        sklearn-compatible interface to sparse group lasso
+        <br>
+
+        <img src="img/sgl_paths.png" height="500px">
+
+    </section>
+
+    <section>
+        <h2>The accuracy/interpretability tradeoff </h2>
+        <img src="./img/Accuracy-interpretability-tradeoff-4.png" height="500">
+    </section>
 
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age1.png" height="500px">
-        </section>
+    <section>
+        <h2>Challenges</h2>
+        <div class="row" ">
+                <div>
+                    <h3 style="color:#D3D3D3;">Scale</h3>
+                    <p style="color:#D3D3D3;">How do we adapt research to big datasets?</p>
+                    <p style="color:#D3D3D3;">Cloud computing </p>
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age2.png" height="500px">
-        </section>
+                </div>
+                <div>
+                    <h3 style="color:#D3D3D3;">Complexity</h3>
+                    <p style="color:#D3D3D3;">How do we analyze and interpret multi-dimensional data?</p>
+                    <p style="color:#D3D3D3;">Machine learning: balancing accuracy and interpretability</p>
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age3.png" height="500px">
-        </section>
+                </div>
+                <div>
+                    <h3>Socio-technical</h3>
+                    <p>How do we collaborate, publish and teach?</p>
+                    <p>Open science: sharing software, data, and training</p>
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age4.png" height="500px">
-        </section>
+                </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <img src="img/brain-age5.png" height="500px">
-        </section>
-
-        <section>
-            <h2>Brain age</h2>
-            <p>Predictive model of age, based on brain features</p>
-            <p class="fragment">The model was constructed based on a publicly available sample of 77 individuals <br>
-                (Yeatman et al. 2014)</p>
-            <p class="fragment">Chronoligical ages 6 - 50</p>
-            <p class="fragment">Sparse group lasso</p>
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
+    <section>
+        <h2> Community-developed open-source software</h2>
+        <div class="row fragment" data-fragment-index="1">
+        <div class="imgcite two-col">
+            <div style="position: absolute; left:2em; top:3em">
+                <img src="img/nipy-logo.png"  align=middle height=200 width=200>
+                <br>
+                Neuroimaging in Python
+                <p class="fragment">
+                A community of practice
+                <p class="fragment">
+                Many different projects
+                <br>
+                <a href="nipy.org">http://nipy.org</a>
             </div>
-        </section>
-
-        <section>
-            <h2>Brain age</h2>
-            <img src="img/age_regression.png" height="500px">
+        </div>
+        <div class="imgcite two-col fragment">
+            <img src="img/dipy-logo.png">
+            Diffusion Imaging in Python
+            <p class="fragment">
+            Comprehensive
+            <p class="fragment">
+            Thoroughly tested
+            <p class="fragment">
+            Well-documented
             <br>
-            MAE: 3.6 years, R<sup>2</sup>=0.3
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Multiple white matter correlates</h2>
-            <div style="position: absolute; top:2em; left:6em;">
-            <img src="img/age_coefficients.gif" height="600px">
-            </div>
-            <div style="position: absolute; top:10em; left:25em;">
-                <img src="img/age-color-scale.png" height="150px">
-                </div>
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
-            </div>
-        </section>
-
-        <section>
-            <h2>In some tracts FA increases with age</h2>
-            <h3>Early in development</h3>
-            <img src="img/left_arcuate_age_fa.png">
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
-            </div>
-
-        </section>
-
-        <section>
-            <h2>In some tracts FA increases with age</h2>
-            <h3>Late in development</h3>
-            <img src="img/left_cingulum_cingulate_age_fa.png">
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
-            </div>
-        </section>
-
-
-        <section>
-            <h2>In other tracts FA decreases with age</h2>
-            <img src="img/callosum_forceps_minor_age_fa.png">
-            <div class="cite">
-                <a href="https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1">Richie-Halford, Yeatman, Simon & <b>Rokem</b> (2020)</a>
-            </div>
-        </section>
-
-
-    <section>
-    <h2>Sparse Group Lasso</h2>
-        <p class="fragment">Capitalizes on brain structure</p>
-        <p class="fragment">Accurately classifies ALS patients</p>
-        <p class="fragment">Serves as a basis for a brain age model</p>
-        <p class="fragment">Identifies dense or sparse biological feature sets</p>
-    </section>
-
-    <section>
-        <div class="row">
-            <div class="imgcite two-col">
-                <img src="./img/haystacks.jpg">
-             </div>
-            <div class="imgcite two-col">
-                <img src="./img/forest.png">
+            <a href="dipy.org">http://dipy.org</a>
+            <div class="cite" style="position: absolute; left:0px">
+                    <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
             </div>
         </div>
+    </div>
     </section>
 
+
     <section>
-        <h2>Current and future work</h2>
-        <p class="fragment">Adverse childhood events (Adam Richie-Halford)</p>
-        <p class="fragment">Acquisition of skilled reading and math (w/ Jason Yeatman, Stanford)</p>
-        <p class="fragment">Baseline model of the Human Connectome (John Kruper)</p>
-        <div class="fragment">
-            <h3>Human Connectome Project extensions</h3>
-            <p>Lifespan development</p>
-            <p>Brain aging and dementia</p>
-            <p>Alzheimer's subtypes</p>
-            <p>Anxiety and depression in teenagers</p>
-            <p>Amish Connectome (mental illness)</p>
-            <p>Low vision and blindness</p>
+        <h2>Distributed collaboration</h2>
+        <img src="img/dipy_global.png">
+        <div class="cite" style="position: absolute; left:0px">
+        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
     </section>
 
 
     <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3>Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-    <section>
-        <div class="row">
-            <div class="imgcite two-col fragment">
-
-                <img src="img/eScience-infographic.png" height=450>
-            </div>
-
-            <div class="imgcite two-col fragment">
-                <p class="fragment">
-                Data-driven research
-                </p>
-
-                <p class="fragment">
-                    Building a data science community: open, rigorous and ethical
-                </p>
-                <p class="fragment">
-                    Development of tools and practices for reproducible research
-                </p>
-                <p class="fragment">
-                    Data science education
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3>Expanding access to data-driven research</h3>
-        <h4>Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-    <section>
+        <h2>Sharing data</h2>
         <p class="fragment">Results from large multi-dimensional datasets are hard to understand</p>
 		<p class="fragment">Hard to communicate</p>
 		<p class="fragment">Hard to reproduce</p>
@@ -1123,243 +1454,14 @@
         </div>
 	</section>
 
-    <section>
-        <h2>Facilitates reproducibility</h2>
-        <img src="img/nas_cover.png" height=350><br>
-        <img src="img/nas.png" height=120 align="center">
-    </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3>Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4>Developing open-source software for science</h4>
-        <h4 style="color:#D3D3D3;">Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-
-    <section>
-        <h2> Community-developed open-source software</h2>
-        <div class="row fragment" data-fragment-index="1">
-        <div class="imgcite two-col">
-            <div style="position: absolute; left:2em; top:3em">
-                <img src="img/nipy-logo.png"  align=middle height=200 width=200>
-                <br>
-                Neuroimaging in Python
-                <p class="fragment">
-                A community of practice
-                <p class="fragment">
-                Many different projects
-                <br>
-                <a href="nipy.org">http://nipy.org</a>
-            </div>
-        </div>
-        <div class="imgcite two-col fragment">
-            <img src="img/dipy-logo.png">
-            Diffusion Imaging in Python
-            <p class="fragment">
-            Comprehensive
-            <p class="fragment">
-            Thoroughly tested
-            <p class="fragment">
-            Well-documented
-            <br>
-            <a href="dipy.org">http://dipy.org</a>
-            <div class="cite" style="position: absolute; left:0px">
-                    <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section>
-        <h2>Open to users</h2>
-        <img src="img/dipy-pip-installs.png">
-        <div class="cite" style="position: absolute; left:0px">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
-    <section>
-            <h2>Open to contributors</h2>
-            <img src="img/dipy_contributors.png">
-            <div class="cite" style="position: absolute; left:0px">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-            </div>
-    </section>
-
-
-
-    <section>
-        <h2>Distributed collaboration</h2>
-        <img src="img/dipy_global.png">
-        <div class="cite" style="position: absolute; left:0px">
-        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, <b>Rokem</b>, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-        </div>
-    </section>
-
 	<section>
-		<h2>How can we get more people involved?</h2>
-        <p class="fragment">Developing software requires expertise</p>
-        <p class="fragment">Learning methods for data-driven research requires substantial hands-on experience</p>
-    </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3 style="color:#D3D3D3;">Data-driven discovery in human neuroscience</h3>
-        <h4 style="color:#D3D3D3;">Studying brain connections with diffusion MRI </h4>
-        <h4 style="color:#D3D3D3;">Automated tract segmentation and tractometry</h4>
-        <h3 style="color:#D3D3D3;">Applications</h3>
-        <h4 style="color:#D3D3D3;">Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4 style="color:#D3D3D3;">Brain development: seeing the forest and the trees</h4>
-        <h3>Expanding access to data-driven research</h3>
-        <h4 style="color:#D3D3D3;">Publishing data and results in exploratory data visualizations</h4>
-        <h4 style="color:#D3D3D3;">Developing open-source software</h4>
-        <h4>Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-	<section>
-		<h2>How can we get more people involved?</h2>
-	    <p>Developing software requires expertise</p>
-        <p>Learning methods for data-driven research requires substantial hands-on experience</p>
-        <img class="fragment" src="img/HackSpectrum0.png" height="400">
-
-        <div class="cite" style="position: absolute; top:650px; left:450px">
-            <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & <b>Rokem</b> (2018)</a>
-        </div>
-
-    </section>
-
-    <section>
-        <div class="row">
-            <div class="imgcite two-col fragment">
-                <img src="img/carpentries-logo.png">
-                <img class="fragment" src="img/swc-logo.png" height="133px" width="200px">
-                <img class="fragment" src="img/dc-logo.png" height="133px" width="200px">
-            </div>
-        <div class="imgcite two-col fragment">
-            <p>Science hackathons</p>
-            <p><a href="http://brainhack.org">http://brainhack.org</a></p>
-            <div class="cite" style="position: absolute; left:600px">
-                    <a href="https://gigascience.biomedcentral.com/articles/10.1186/s13742-016-0121-x"> Craddock et al. (2016) Gigascience</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Hack weeks</h2>
-        <p class="fragment">Week-long events</p>
-        <p class="fragment">Combination of learning and project work</p>
-        <p class="fragment">
-            Astro hack week
-        </p>
-        <p class="fragment">
-            Geo hack week
-        </p>
-        <p class="fragment">
-            Neuro hack week
-        </p>
-        <p class="fragment">A fine balance of pedagogy and hacking</a></p>
-
-    </section>
-
-
-    <section>
-        <h2>Hack weeks</h2>
-        <p>Week-long events</p>
-        <p>Combination of learning and project work</p>
-        <p>A fine balance of pedagogy and hacking</a></p>
-
-        <div>
-        <img src="img/HackSpectrum.png" height="350">
-        </div>
-        <div class="cite" style="position: absolute; top:650px; left:450px">
-                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & <b>Rokem</b> (2018)</a>
-        </div>
-    </section>
-
-	<section>
+        <h2>Sharing the knowledge: training</h2>
         <a href="http://neurohackademy.org/">NeuroHackademy: A Summer Institute in Neuroscience and Data Science</a><br>
         <img src="img/neurohack-collage.png" height="400">
         <p>
         <img src="img/nimh-logo.gif" height="50px">
         </p>
     </section>
-
-    <section>
-        <h2>NeuroHackademy 2020 goes online!</h2>
-
-        <a href="https://neurohackademy.org/apply/">https://neurohackademy.org/apply/</a>
-
-    </section>
-
-    <section>
-        <h2>Outline</h2>
-        <div align="left">
-        <h3>Data-driven discovery in human neuroscience</h3>
-        <h4>Studying brain connections with diffusion MRI </h4>
-        <h4>Automated tract segmentation and tractometry</h4>
-        <h3>Applications</h3>
-        <h4>Amyotropic Lateral Sclerosis: finding a needle in a haystack</h4>
-        <h4>Brain development: seeing the forest and the trees</h4>
-        <h3>Expanding access to data-driven research</h3>
-        <h4>Publishing data and results in exploratory data visualizations</h4>
-        <h4>Developing open-source software</h4>
-        <h4>Training researchers from diverse backgrounds</h4>
-        </div>
-    </section>
-
-
-
-	<section>
-
-		<h2> Thanks! </h2>
-		<div style="position: absolute; left:0px; top:100px;" align="left">
-			Adam Richie-Halford
-			<br>
-            John Kruper
-            <br>
-			Anisha Keshavan
-			<br>
-            Josh Smith
-			<br>
-			Jason Yeatman (Stanford)
-			<br>
-			Noah Simon (UW Biostats)
-			<br>
-			Eleftherios Garyfallidis (IU)
-			<br>
-			Tal Yarkoni (UT Austin)
-			<br>
-			Daniela Huppenkothen (UW Astronomy)
-			<br>
-            Anthony Arendt (APL)
-		</div>
-
-		<div style="position: absolute; left:500px; top:80px;">
-			<img src="img/msdse-sponsors.png" height="50px">
-			<br>
-			<img src="img/nimh-logo.gif" height="50px">
-			<img src="img/nibib-logo.png" height="50px">
-			<br>
-			<img src="img/BMGF-logo.png" height="100px">
-			<img src="img/nsf-logo.jpeg" height="100px">
-			<br>
-			<img src="img/eScience.png" height="80px">
-		</div>
-
-	</section>
 
 	<section>
 
